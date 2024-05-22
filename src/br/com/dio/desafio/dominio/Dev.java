@@ -62,6 +62,9 @@ public class Dev {
         this.conteudosConcluidos = conteudosConcluidos;
     }
 
+    public boolean estaConcluido(Conteudo conteudo) {
+    return this.conteudosConcluidos.contains(conteudo);
+}
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
