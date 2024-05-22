@@ -54,7 +54,9 @@ public class Bootcamp {
     public void setConteudos(Set<Conteudo> conteudos) {
         this.conteudos = conteudos;
     }
-
+    public boolean conteudoIncluido(Conteudo conteudo) {
+    return this.conteudos.contains(conteudo);
+}
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
